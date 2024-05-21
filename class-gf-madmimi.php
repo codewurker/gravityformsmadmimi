@@ -30,6 +30,15 @@ class GFMadMimi extends GFFeedAddOn {
 	protected $_capabilities = array( 'gravityforms_madmimi', 'gravityforms_madmimi_uninstall' );
 
 	/**
+	 * Enabling background feed processing to prevent performance issues delaying form submission completion.
+	 *
+	 * @since 1.5
+	 *
+	 * @var bool
+	 */
+	protected $_async_feed_processing = true;
+
+	/**
 	 * Get instance of this class.
 	 * 
 	 * @access public
